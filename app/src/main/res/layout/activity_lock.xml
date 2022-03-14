@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.studyapp.LockActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="150sp"
+        android:layout_height="48sp"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80sp"/>
+
+    <TextView
+        android:id="@+id/studying_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="공부중..."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chronometer" />
+
+    <TextView
+        android:id="@+id/lockclear_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="잠금 해제까지..."
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/countdownView" />
+
+    <TextView
+        android:id="@+id/countdownView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="150sp"/>
+
+    <Button
+        android:id="@+id/btnEmergencyUse"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_white_phone_android_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="5sp"
+        android:layout_above="@+id/viewEmergencyUse"
+        android:filterTouchesWhenObscured="true"/>
+
+    <TextView
+        android:id="@+id/viewEmergencyUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="긴급사용"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="40sp"
+        android:layout_marginBottom="30sp" />
+
+    <Button
+        android:id="@+id/btnEmergencyCall"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_baseline_call_24"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30sp"
+        android:layout_marginBottom="5sp"
+        android:layout_above="@+id/viewEmergencyCall"
+        android:filterTouchesWhenObscured="true"/>
+
+    <TextView
+        android:id="@+id/viewEmergencyCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="긴급전화"
+        android:textColor="#FFFFFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="40sp"
+        android:layout_marginBottom="30sp" />
+
+</RelativeLayout>

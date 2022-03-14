@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    android:layout_margin="10sp"
+    android:elevation="5sp"
+    android:id="@+id/item">
+
+    <TextView
+        android:id="@+id/txtGroupName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹 이름"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/txtGroupInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹 정보"
+        android:layout_below="@id/txtGroupName" />
+    <TextView
+        android:id="@+id/txtGroupKind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹 정보"
+        android:layout_below="@id/txtGroupInfo" />
+    <TextView
+        android:id="@+id/txtGroupPersonnel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="그룹 정보"
+        android:layout_below="@id/txtGroupKind" />
+
+</RelativeLayout>

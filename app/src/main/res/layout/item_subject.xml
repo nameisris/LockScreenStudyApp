@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60sp"
+    android:padding="10sp"
+    android:layout_margin="10sp"
+    android:elevation="5sp"
+    android:id="@+id/item">
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_baseline_play_circle_outline_24"/>
+
+    <TextView
+        android:id="@+id/txtSubjectName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btnStart"
+        android:layout_centerVertical="true"
+        android:text="과목명"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/txtSubjectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/btnOption"
+        android:layout_centerVertical="true"
+        android:text="시간"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/btnOption"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_baseline_more_vert_24"/>
+
+
+
+</RelativeLayout>

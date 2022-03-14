@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/btnStopEmergencyUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="긴급사용 중지"/>
+
+</RelativeLayout>
